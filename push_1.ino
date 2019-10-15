@@ -4,9 +4,7 @@ int p1=3;
 int p2=7;
 const int m1  = 5;    
 const int m2  = 6;    
-//Motor B
-const int m3  = 9;  
-const int m4  = 8;
+
 
 
 int r = 2;
@@ -23,13 +21,12 @@ void setup(){
   
   pinMode(p1,OUTPUT);
   pinMode(p2,OUTPUT);
-  Serial.begin(9600);
+  
   pinMode(2,INPUT);
 
      pinMode(m1, OUTPUT);
     pinMode(m2, OUTPUT);
-    pinMode(m3, OUTPUT);
-    pinMode(m4, OUTPUT);
+   
 }
      void ledstate(int pin, int state) 
     {
@@ -52,8 +49,38 @@ void loop(){
    else 
    {ledstate(5,LOW);
    ledstate(3,HIGH);
-    digitalWrite(p1,LOW);
-    digitalWrite(p2,HIGH);
+   
    }
+ 
+  RainVal = analogRead(A1);
+  IsRaining = digitalRead(r);
+ 
+  if(RainVal<400){
+    strRaining = "YES";
+
+    digitalWrite(m1, HIGH);
+    digitalWrite(m2, LOW);
+     delay(5000);
+   
+ digitalWrite(m1,LOW);
+   digitalWrite(m2,LOW);
+   delay(6000);
+      if(RainVal>500){ digitalWrite(m1,LOW);
+                     digitalWrite(m2,HIGH);}     
+  }
+  else{
+    strRaining = "NO";
+     digitalWrite(m1,LOW);
+      digitalWrite(m2,LOW);
+  
+   
+  }
+ 
+  Serial.print("Raining: ");
+  Serial.print(strRaining);  
+  Serial.print(" Moisture Level: ");
+  Serial.println(RainVal);  
+  
+ 
    delay(2000);
 }
