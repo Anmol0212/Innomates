@@ -16,3 +16,52 @@ Thank you for your understanding and cooperation during this transition period. 
 
 Sincerely,
 [Your Name]
+
+
+
+Sub CreateSingaporeCulturePresentation()
+    Dim pptApp As PowerPoint.Application
+    Dim pptPres As PowerPoint.Presentation
+    Dim pptSlide As PowerPoint.Slide
+    Dim slideIndex As Integer
+    
+    ' Create a new PowerPoint application
+    Set pptApp = New PowerPoint.Application
+    pptApp.Visible = True
+    
+    ' Create a new presentation
+    Set pptPres = pptApp.Presentations.Add
+    
+    ' Add the first slide
+    Set pptSlide = pptPres.Slides.Add(1, ppLayoutTitle)
+    pptSlide.Shapes.Title.TextFrame.TextRange.Text = "Singapore Culture"
+    pptSlide.Shapes.Subtitle.TextFrame.TextRange.Text = "Page 1"
+    
+    ' Add content to the first slide
+    ' You can add text, images, and other shapes to the slide using the pptSlide.Shapes.AddXXX methods
+    ' Example:
+    pptSlide.Shapes.AddTextbox(msoTextOrientationHorizontal, 100, 100, 400, 200).TextFrame.TextRange.Text = "Welcome to Singapore!"
+    
+    ' Add animations to the first slide
+    ' You can add various animations to the slide using the pptSlide.TimeLine.MainSequence.AddEffect method
+    ' Example:
+    pptSlide.TimeLine.MainSequence.AddEffect EffectID:=msoAnimEffectFade, Trigger:=msoAnimTriggerAfterPrevious
+    
+    ' Add additional slides
+    For slideIndex = 2 To 5
+        Set pptSlide = pptPres.Slides.Add(slideIndex, ppLayoutTitle)
+        pptSlide.Shapes.Title.TextFrame.TextRange.Text = "Singapore Culture"
+        pptSlide.Shapes.Subtitle.TextFrame.TextRange.Text = "Page " & slideIndex
+        
+        ' Add content and animations to the additional slides
+        ' Example:
+        pptSlide.Shapes.AddTextbox(msoTextOrientationHorizontal, 100, 100, 400, 200).TextFrame.TextRange.Text = "Slide " & slideIndex
+        pptSlide.TimeLine.MainSequence.AddEffect EffectID:=msoAnimEffectFade, Trigger:=msoAnimTriggerAfterPrevious
+    Next slideIndex
+    
+    ' Clean up objects
+    Set pptSlide = Nothing
+    Set pptPres = Nothing
+    Set pptApp = Nothing
+End Sub
+
