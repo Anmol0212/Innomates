@@ -1,12 +1,23 @@
 Dear [Manager's Name],
+Subject: Request for Laptop Replacement
 
-I am writing to inform you that I will not be able to serve my notice period as per my contract. As I am currently on bench and not assigned to any project, I would like to request an immediate resignation effective [today's date].
+Dear IT Team,
 
-I understand that this may cause inconvenience to the team and the company, and I apologize for any disruption this may cause. I am willing to work with the team and transition my responsibilities to ensure a smooth handover of my work, if there are any pending tasks or responsibilities that I need to fulfill.
+I hope this email finds you well. I am writing to inform you about the ongoing performance issues I have been experiencing with my current laptop and to request a replacement device to ensure uninterrupted productivity.
 
-Please let me know how I can be of assistance during this transition period. I would be happy to help with any necessary documentation or knowledge transfer.
+Over the past few weeks, I have encountered numerous instances of sluggishness, system freezes, and unexpected restarts, significantly hindering my ability to perform my job efficiently. Despite my best efforts to troubleshoot and resolve these issues, the problems persist, impacting my workflow and causing delays in completing tasks.
 
-Thank you for your understanding and support during my time here. I appreciate the opportunities and experiences I have gained while working with this company.
+Considering the critical nature of my work and the frequency of these performance-related problems, I believe it would be best to replace my current laptop with a new one. The replacement would not only enhance my productivity but also allow for a more seamless and reliable work experience.
 
-Best regards,
+I kindly request your assistance in initiating the process of replacing my current laptop. I understand that obtaining a new device involves certain procedures, such as obtaining necessary approvals, determining hardware specifications, and transferring data from the existing laptop. I am available to provide any information required to facilitate this process and ensure a smooth transition.
+
+As an integral member of the team, I am committed to delivering high-quality work and meeting deadlines. However, the persistent performance issues with my current laptop hinder my ability to contribute effectively. Therefore, I kindly request your prompt attention to this matter.
+
+Thank you for your understanding and support. I appreciate your efforts in ensuring that I have the necessary tools to perform my job efficiently. Should you require any further details or clarification, please do not hesitate to reach out to me.
+
+Looking forward to a positive resolution,
+
 [Your Name]
+[Your Employee ID or Other Relevant Information]
+[Department/Team Name]
+[Contact Information]
